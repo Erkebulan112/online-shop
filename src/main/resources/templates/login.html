@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/css/sign-in.css">
+</head>
+<body>
+<div class="corner-container">
+  <img src="/css/iitu.original.jpg" alt="logo" class="corner-image">
+  <span class="corner-text">SIS-2102</span>
+</div>
+
+<div class="login-container">
+  <h2>Login to Your Account</h2>
+  <form action="/api/users/login" method="POST">
+    <div class="form-group">
+      <label for="login">Username:</label>
+      <input type="text" id="login" name="login" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <button type="submit">Login</button>
+    </div>
+  </form>
+
+  <div th:if="${error}" class="error-message">
+    <p th:text="${error}"></p>
+  </div>
+</div>
+</body>
+</html>
