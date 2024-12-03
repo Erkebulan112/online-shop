@@ -50,7 +50,7 @@
 
 <h2>Add New User</h2>
 
-<form action="/api/users/new-user" method="post">
+<form th:action="@{/api/users/new-user}" method="post">
   <label for="username">Username:</label>
   <input type="text" id="username" name="username" required>
   <label for="login">Login:</label>
