@@ -1,6 +1,5 @@
 package com.project_sql.online_shop.dtos;
 
-import jakarta.persistence.Column;
 import lombok.*;
 
 @Getter

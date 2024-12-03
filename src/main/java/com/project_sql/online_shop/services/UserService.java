@@ -59,7 +59,6 @@ public class UserService {
       log.info("Deleted user with id " + id);
     } else
       throw new EntityNotFoundException("User not found " + id);
-      log.info("User with id + " + id + " doesn't exist");
   }
 
   public boolean authenticate(String login, String password) {
